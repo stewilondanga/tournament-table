@@ -144,7 +144,7 @@ tr:nth-child(8) td {
   padding-bottom: 20px;
 }
 
-/*tr:nth-child(2) td:after,
+tr:nth-child(2) td:after,
 tr:nth-child(4) td:after,
 tr:nth-child(6) td:after,
 tr:nth-child(8) td:after {
@@ -159,7 +159,7 @@ tr:nth-child(8) td:after {
   transform: translateY(-50%) translateX(-10px);
 }
 
-tr:nth-child(2) td:before,
+/*tr:nth-child(2) td:before,
 tr:nth-child(6) td:before {
   content: "";
   position: absolute;
