@@ -1,4 +1,4 @@
-body {
+/*body {
   text-align: center;
   font-family: courier;
   background-image: url("../assets/image.jpeg");
@@ -105,6 +105,108 @@ body {
 
 .share-button:hover .share__link:nth-of-type(4) {
   transition-delay: 0.4s;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+td {
+  vertical-align: middle;
+  padding: 0px 30px 0px 15px;
+  position: relative;
+}
+td span {
+  vertical-align: baseline;
+}
+
+tr:nth-child(3) td:nth-child(2):after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 9px;
+  height: 200%;
+  width: 10px;
+  background-image: linear-gradient(to left, #eee, #eee), linear-gradient(to left, #eee, #eee);
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  background-position: right top, right bottom;
+  border-right: 1px solid #eee;
+}
+
+tr:nth-child(2) td,
+tr:nth-child(4) td,
+tr:nth-child(6) td,
+tr:nth-child(8) td {
+  padding-bottom: 20px;
+}
+tr:nth-child(2) td:after,
+tr:nth-child(4) td:after,
+tr:nth-child(6) td:after,
+tr:nth-child(8) td:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #eee;
+  width: 1px;
+  display: block;
+  transform: translateY(-50%) translateX(-10px);
+}
+
+tr:nth-child(2) td:before,
+tr:nth-child(6) td:before {
+  content: "";
+  position: absolute;
+  right: -9px;
+  top: 50%;
+  height: 1px;
+  background: #eee;
+  width: 20px;
+}
+
+tr:nth-child(4) td:before,
+tr:nth-child(8) td:before {
+  content: "";
+  position: absolute;
+  right: -9px;
+  top: -50%;
+  height: 1px;
+  background: #eee;
+  width: 20px;
+}
+
+tr:first-child td:last-child:before {
+  content: "";
+  width: 20px;
+  height: calc(100% / 8);
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translatey(-50%);
+  background-image: linear-gradient(to left, #eee, #eee), linear-gradient(to top, #eee, #eee), linear-gradient(to top, #eee, #eee), linear-gradient(to top, #eee, #eee);
+  background-repeat: no-repeat;
+  background-size: 1px 100%, 10px 1px, 10px 1px, 10px 1px;
+  background-position: center center, left top, left bottom, right center;
+}
+
+.goals {
+  font-size: 11px;
+  vertical-align: middle;
+  padding: 1px 4px;
+  background: rgba(255, 165, 0, 0.3);
+  border-radius: 3px;
 }
 
 #contact h1 {
