@@ -119,11 +119,11 @@ td {
   position: relative;
 }
 
-/*td span {
+td span {
   vertical-align: baseline;
 }
 
-tr:nth-child(3) td:nth-child(2):after {
+/*tr:nth-child(3) td:nth-child(2):after {
   content: "";
   position: absolute;
   top: 0;
